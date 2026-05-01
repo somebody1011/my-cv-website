@@ -1,0 +1,20 @@
+{
+  "name": "my-cv-website",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/somebody1011/my-cv-website#readme",
+  "bugs": {
+    "url": "https://github.com/somebody1011/my-cv-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somebody1011/my-cv-website.git"
+  },
+  "license": "ISC",
+  "author": "somebody1011",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
