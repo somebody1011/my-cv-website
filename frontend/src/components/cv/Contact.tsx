@@ -1,5 +1,5 @@
 import {  Mail,  FileText } from "lucide-react";
-import { FaGithub, FaLinkedin,FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa"; //FaTwitter 
 import { useReveal } from "@/hooks/use-reveal";
 import { SectionHeader } from "./About";
 

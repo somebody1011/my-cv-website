@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowDown,  Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import devPortrait from "@/assets/dev-portrait.jpg";
+// import devPortrait from "@/assets/dev-portrait.jpg";
 
 const roles = ["Full-Stack Developer", "TypeScript Native", "Open-Source Contributor", "Indie Builder"];
 

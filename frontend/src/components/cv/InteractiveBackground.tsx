@@ -17,7 +17,7 @@ export function InteractiveBackground() {
     if (!ctx) return;
 
     const CHARS =
-      "01{}<>/=;()[]+-*&|!?$#abcdefghijklmnopqrstuvwxyz";
+      "01{}<>/=;()[]+-*&|!?$#abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     let width = 0;
     let height = 0;

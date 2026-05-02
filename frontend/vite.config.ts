@@ -6,6 +6,7 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/",
   server: {
     allowedHosts: [
       'ayla-soarable-interspersedly.ngrok-free.dev'
