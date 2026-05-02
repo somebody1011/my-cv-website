@@ -20,32 +20,32 @@ export function About() {
   return (
     <section id="about" ref={ref} className="relative px-4 py-28 md:px-8 md:py-36">
       <div className="mx-auto max-w-7xl">
-        <SectionHeader index="01" title="about" file="~/ada/about.md" />
+        <SectionHeader index="01" title="about" file="~/elisha/about.md" />
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           <div className="reveal lg:col-span-7" style={{ fontFamily: "var(--font-sans)" }}>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                Hey, I'm Ada — a software engineer with{" "}
-                <span className="font-mono text-foreground">7+ years</span> of experience
+                Hey, I'm Elisha — a software developer with{" "}
+                <span className="font-mono text-foreground">3+ years</span> of experience
                 building web applications, APIs, and developer tools that scale.
-                I started out tinkering with WordPress themes at 14 and never
+                I started out tinkering with Computers at 14 and never
                 really stopped writing code since.
               </p>
               <p>
                 Today I work primarily with{" "}
                 <span className="font-mono text-primary">TypeScript</span>,{" "}
                 <span className="font-mono text-primary">React</span>, and{" "}
-                <span className="font-mono text-primary">Go</span>, with a soft
-                spot for Rust and well-designed CLIs. I care deeply about
+                <span className="font-mono text-primary">Python</span>, with a soft
+                spot for Go and well-designed CLIs. I care deeply about
                 performance, accessibility, and shipping things that don't break
                 at 3am.
               </p>
               <p>
                 Outside of work I maintain a couple of small open-source
-                libraries, write a low-traffic newsletter about systems design,
-                and lose at chess on lichess under the name{" "}
-                <span className="font-mono text-accent">@ada_pawns</span>.
+                libraries, read a low-traffic newsletter about systems design and books,
+                and play basketball. {" "}
+                {/* <span className="font-mono text-accent">@ada_pawns</span>. */}
               </p>
             </div>
           </div>
@@ -60,10 +60,10 @@ export function About() {
               </div>
               <div className="grid grid-cols-2 gap-px bg-line">
                 {[
-                  ["7+", "years_shipped"],
-                  ["120k", "lines_of_code"],
-                  ["48", "projects_done"],
-                  ["1.4k", "github_stars"],
+                  ["3+", "years_shipped"],
+                  ["2000+", "lines_of_code"],
+                  ["2", "projects_done"],
+                  ["11", "github_stars"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-surface p-5">
                     <div className="font-mono text-3xl font-bold text-primary">{n}</div>

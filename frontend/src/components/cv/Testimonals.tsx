@@ -4,36 +4,36 @@ import { Quote, Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Ada shipped our infra rewrite ahead of schedule and cut our p99 latency in half. Best engineer we've hired in years.",
-    name: "Maya Chen",
-    role: "CTO",
-    company: "Northwind Labs",
-    initials: "MC",
+      "Elisha is a phenomenal developer and collaborator. He consistently delivers high-quality work on time, communicates clearly, and elevates the entire team with his positive attitude and growth mindset.",
+    name: "Joseph Angelo",
+    role: "staff member",
+    company: "Makasini enterprises",
+    initials: "JA",
   },
-  {
-    quote:
-      "Rare combination of taste, speed, and rigor. Code reviews from Ada made our entire team better.",
-    name: "Tomás Rivera",
-    role: "Staff Engineer",
-    company: "Helix",
-    initials: "TR",
-  },
-  {
-    quote:
-      "Took a vague spec and delivered a polished product. Communicates clearly, ships reliably — a true 10x collaborator.",
-    name: "Priya Anand",
-    role: "Product Lead",
-    company: "Mercato",
-    initials: "PA",
-  },
-  {
-    quote:
-      "We hired Ada for a 4‑week sprint and ended up extending three times. Pure signal, zero noise.",
-    name: "Lukas Berg",
-    role: "Founder",
-    company: "Outpost",
-    initials: "LB",
-  },
+//   {
+//     quote:
+//       "Rare combination of taste, speed, and rigor. Code reviews from Ada made our entire team better.",
+//     name: "Tomás Rivera",
+//     role: "Staff Engineer",
+//     company: "Helix",
+//     initials: "TR",
+//   },
+//   {
+//     quote:
+//       "Took a vague spec and delivered a polished product. Communicates clearly, ships reliably — a true 10x collaborator.",
+//     name: "Priya Anand",
+//     role: "Product Lead",
+//     company: "Mercato",
+//     initials: "PA",
+//   },
+//   {
+//     quote:
+//       "We hired Ada for a 4‑week sprint and ended up extending three times. Pure signal, zero noise.",
+//     name: "Lukas Berg",
+//     role: "Founder",
+//     company: "Outpost",
+//     initials: "LB",
+//   },
 ];
 
 export function Testimonials() {

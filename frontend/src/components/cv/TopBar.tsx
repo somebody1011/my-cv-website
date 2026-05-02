@@ -46,7 +46,7 @@ export function TopBar() {
           </span>
           <span className="hidden sm:inline">
             <span className="text-muted-foreground">~/</span>
-            <span className="text-foreground">ada</span>
+            <span className="text-foreground">elisha</span>
             <span className="cm">.dev</span>
           </span>
         </a>

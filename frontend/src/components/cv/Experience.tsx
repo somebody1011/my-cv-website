@@ -3,51 +3,43 @@ import { SectionHeader } from "./About";
 
 const roles = [
   {
-    period: "2024 — now",
-    company: "Vercel",
-    role: "Senior Software Engineer",
-    location: "Remote",
+    period: "2026 — now",
+    company: "(solo development)",
+    role: " Software Developer",
+    location: "Full-time",
     bullets: [
-      "Lead engineer on the build pipeline team — reduced cold-build times by 38%.",
-      "Designed and shipped a streaming log infrastructure handling 2B events/day.",
+      "Creating an SDK to streamline integration with East African fintech APIs.",
+      "Learning Python and Go on the fly, contributing to open source, and building small side projects while I figure out what to do next.",
+      "Learning more about systemsdesign,security, and distributed systems by reading a lot and building small tools and libraries.",
     ],
-    stack: ["TypeScript", "Go", "Rust", "Kafka"],
+    stack: ["TypeScript", "Go", "Python", "Postgressql"],
   },
   {
-    period: "2021 — 2024",
-    company: "Linear",
-    role: "Full-Stack Engineer",
-    location: "Amsterdam",
+    period: "2025",
+    company: "Makasini enterprises",
+    role: "Full-Stack Developer",
+    location: "Mbeya, TZ",
     bullets: [
-      "Owned realtime sync engine — under 80ms p95 across continents.",
-      "Built the cycles & projects feature used by 30k+ engineering teams.",
+      "Developed an inventory management and point-of-sale system for local store owners, improving their operational efficiency and sales tracking.",
+      "Deployed the application on Vercel, ensuring high availability and performance for users and contiously iterated based on user feedback to enhance features and usability.",
     ],
-    stack: ["TypeScript", "React", "Postgres", "GraphQL"],
+    stack: ["TypeScript", "React", "Firebase", "Express", "Tailwindcss"],
   },
   {
-    period: "2019 — 2021",
-    company: "Paystack (Stripe)",
-    role: "Backend Engineer",
-    location: "Lagos",
+    period: "July 2023 - Sept 2023",
+    company: "Buibui technologies",
+    role: "Field Student",
+    location: "Dar es salaam, TZ",
     bullets: [
-      "Scaled the payments API from 1k to 50k tps with zero-downtime migrations.",
-      "Wrote the internal idempotency framework still in use today.",
+      "Performed Data entry activities and provided support in the development.",
+      "Ensured data accuracy and completeness.",
     ],
-    stack: ["Node.js", "Go", "Redis", "AWS"],
+    stack: ["Agiza app"],
   },
-  {
-    period: "2017 — 2019",
-    company: "Andela",
-    role: "Software Engineer",
-    location: "Lagos",
-    bullets: [
-      "Built internal tooling for matching engineers to global partner companies.",
-    ],
-    stack: ["Python", "Django", "React"],
-  },
+  
 ];
 
-const skills = ["TypeScript", "React", "Go", "Rust", "Postgres", "Docker", "Kubernetes", "AWS", "Cloudflare", "Vite", "Bun", "Linux"];
+const skills = ["TypeScript", "React", "Go", "Python", "Postgres", "Docker", "Kubernetes", "AWS", "Cloudflare", "Vite", "Bun", "Linux"];
 
 
 export function Experience() {
@@ -56,7 +48,7 @@ export function Experience() {
   return (
     <section id="experience" ref={ref} className="relative bg-surface-2/40 px-4 py-28 md:px-8 md:py-36">
       <div className="mx-auto max-w-7xl">
-        <SectionHeader index="04" title="career_log" file="~/ada/career.log" />
+        <SectionHeader index="04" title="career_log" file="~/elisha/career.log" />
 
         <ol className="relative space-y-6 border-l border-dashed border-border pl-6 md:pl-10">
           {roles.map((r, i) => (

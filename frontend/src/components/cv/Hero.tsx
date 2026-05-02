@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ArrowDown,  Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import devPortrait from "@/assets/dev-portrait.jpg";
 
-
-const roles = ["Full-Stack Engineer", "TypeScript Native", "Open-Source Contributor", "Indie Builder"];
+const roles = ["Full-Stack Developer", "TypeScript Native", "Open-Source Contributor", "Indie Builder"];
 
 export function Hero() {
   const [text, setText] = useState("");
@@ -52,8 +52,8 @@ export function Hero() {
           </p>
 
           <h1 className="font-mono text-[clamp(2.5rem,9vw,6rem)] font-bold leading-[1] tracking-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">Ada</span>{" "}
-            <span className="text-primary">Okafor</span>
+            <span className="text-foreground">Elisha</span>{" "}
+            <span className="text-primary">Gerson</span>
             <span className="text-muted-foreground">.</span>
           </h1>
 
@@ -70,9 +70,9 @@ export function Hero() {
           </p>
           <p className="mt-8 max-w-xl font-sans text-base leading-relaxed text-muted-foreground animate-fade-up" style={{ animationDelay: "0.3s", fontFamily: "var(--font-sans)" }}>
             I build fast, reliable web products with a focus on developer
-            experience and design polish. Currently shipping infrastructure
-            tooling at a YC-backed startup, contributing to open source on
-            the side.
+            experience and design polish. Currently i am developing a finconect
+            SDK which helps developers to integrate easily with fintech api's during
+            development also contributing to open source on the side.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
@@ -109,27 +109,52 @@ export function Hero() {
             </div>
           </div>
         </div>
-         {/* Terminal preview */}
-        <div className="lg:col-span-5 lg:pt-12">
+         {/* geenral Terminal preview */}
+        <div className="lg:col-span-5 lg:pt-12 space-y-5">
+          {/* //portait image */}
+          {/* <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <div
+              aria-hidden
+              className="absolute -inset-2 rounded-xl opacity-50 blur-xl"
+              style={{ background: "linear-gradient(135deg, var(--primary), var(--accent))" }}
+            />
+            <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
+              <img
+                src={devPortrait}
+                alt="Portrait of Ada Okafor, software engineer"
+                width={768}
+                height={896}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-border bg-surface-2/90 px-3 py-2 font-mono text-[11px] backdrop-blur">
+                <span className="text-muted-foreground">~/portrait.jpg</span>
+                <span className="flex items-center gap-1.5 text-primary">
+                  <span className="inline-flex h-1.5 w-1.5 rounded-full bg-primary animate-pulse-dot" />
+                  online
+                </span>
+              </div>
+            </div>
+          </div> */}
+              {/* // Terminal preview */}
           <div className="terminal-window animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="terminal-header">
               <span className="terminal-dot" style={{ backgroundColor: "oklch(0.65 0.22 25)" }} />
               <span className="terminal-dot" style={{ backgroundColor: "oklch(0.78 0.16 80)" }} />
               <span className="terminal-dot" style={{ backgroundColor: "oklch(0.78 0.16 155)" }} />
-              <span className="ml-2 font-mono text-xs text-muted-foreground">~/ada — zsh</span>
+              <span className="ml-2 font-mono text-xs text-muted-foreground">~/elisha — zsh</span>
             </div>
             <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">
               <code>
                 <span className="cm">$</span> <span className="fn">whoami</span>{"\n"}
-                <span className="prop">ada.okafor</span>{"\n\n"}
+                <span className="prop">elisha.dev</span>{"\n\n"}
                 <span className="cm">$</span> <span className="fn">cat</span> profile.json{"\n"}
                 <span className="pun">{"{"}</span>{"\n"}
-                {"  "}<span className="prop">"name"</span><span className="pun">:</span> <span className="str">"Ada Okafor"</span><span className="pun">,</span>{"\n"}
-                {"  "}<span className="prop">"role"</span><span className="pun">:</span> <span className="str">"Full-Stack Engineer"</span><span className="pun">,</span>{"\n"}
-                {"  "}<span className="prop">"location"</span><span className="pun">:</span> <span className="str">"Lagos, NG"</span><span className="pun">,</span>{"\n"}
-                {"  "}<span className="prop">"experience"</span><span className="pun">:</span> <span className="num">7</span><span className="pun">,</span>{"\n"}
+                {"  "}<span className="prop">"name"</span><span className="pun">:</span> <span className="str">"Elisha Gerson"</span><span className="pun">,</span>{"\n"}
+                {"  "}<span className="prop">"role"</span><span className="pun">:</span> <span className="str">"Full-Stack Developer"</span><span className="pun">,</span>{"\n"}
+                {"  "}<span className="prop">"location"</span><span className="pun">:</span> <span className="str">"Mbeya, TZ"</span><span className="pun">,</span>{"\n"}
+                {"  "}<span className="prop">"experience"</span><span className="pun">:</span> <span className="num">3</span><span className="pun">,</span>{"\n"}
                 {"  "}<span className="prop">"languages"</span><span className="pun">:</span> <span className="pun">[</span>{"\n"}
-                {"    "}<span className="str">"TypeScript"</span><span className="pun">,</span> <span className="str">"Go"</span><span className="pun">,</span> <span className="str">"Rust"</span><span className="pun">,</span> <span className="str">"Python"</span>{"\n"}
+                {"    "}<span className="str">"TypeScript"</span><span className="pun">,</span> <span className="str">"Python"</span><span className="pun">,</span> <span className="str">"Go"</span><span className="pun">,</span> <span className="str">"C"</span>{"\n"}
                 {"  "}<span className="pun">],</span>{"\n"}
                 {"  "}<span className="prop">"open_to_work"</span><span className="pun">:</span> <span className="kw">true</span>{"\n"}
                 <span className="pun">{"}"}</span>{"\n\n"}

@@ -4,10 +4,10 @@ import { useReveal } from "@/hooks/use-reveal";
 import { SectionHeader } from "./About";
 
 const socials = [
-  { Icon: FaGithub, label: "github", value: "@ada-okafor" },
-  { Icon: FaTwitter, label: "twitter", value: "@ada_codes" },
-  { Icon: FaLinkedin, label: "linkedin", value: "/in/ada-okafor" },
-  { Icon: FileText, label: "resume", value: "download.pdf" },
+  { Icon: FaGithub, label: "github", value: "somebody1011", link: "https://github.com/somebody1011" },
+  // { Icon: FaTwitter, label: "twitter", value: "@ada_codes" },
+  { Icon: FaLinkedin, label: "linkedin", value: "/in/elisha-gerson", link: "https://www.linkedin.com/in/elisha-gerson-3855222a2" },
+  { Icon: FileText, label: "resume", value: "View Resume", link: "https://rxresu.me/elishagerson2/my-resume-elisha-gerson-2026" },
 ];
 
 export function Contact() {
@@ -23,13 +23,13 @@ export function Contact() {
       />
 
       <div className="relative mx-auto max-w-7xl">
-        <SectionHeader index="05" title="contact" file="~/ada/contact.sh" />
+        <SectionHeader index="05" title="contact" file="~/elisha/contact.sh" />
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <div className="reveal lg:col-span-7">
             <p className="mb-3 font-mono text-sm text-muted-foreground">
               <span className="cm">$</span> ./say-hello
-              or just want to{" "}
+              or just want to{""}
               <span className="text-accent">chat shop?</span>
             </p>
             <p
@@ -41,13 +41,13 @@ export function Contact() {
             </p>
 
             <a
-              href="mailto:hello@ada.dev"
+              href="#"
               className="group mt-8 inline-flex items-center gap-3 rounded-md border border-border bg-surface px-5 py-4 font-mono text-base transition-colors hover:border-primary"
             >
               <Mail size={18} className="text-primary" />
-              <span className="text-foreground">hello</span>
+              <span className="text-foreground">elishagerson2</span>
               <span className="pun">@</span>
-              <span className="text-foreground">ada.dev</span>
+              <span className="text-foreground">gmail.com</span>
               <span className="ml-2 text-muted-foreground transition-transform group-hover:translate-x-1">→</span>
             </a>
           </div>
@@ -61,10 +61,10 @@ export function Contact() {
                 <span className="ml-2 font-mono text-xs text-muted-foreground">links.json</span>
               </div>
               <ul>
-                {socials.map(({ Icon, label, value }) => (
+                {socials.map(({ Icon, label, value, link }) => (
                   <li key={label} className="border-b border-border last:border-b-0">
                     <a
-                      href="#"
+                      href={link}
                       className="group flex items-center justify-between gap-4 px-5 py-4 font-mono text-sm transition-colors hover:bg-surface-2"
                     >
                       <span className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export function Contact() {
             <span className="cm">// </span>built with care · TanStack + Tailwind ·{" "}
             <span className="text-primary">v2.6.0</span>
           </span>
-          <span>© 2026 ada.okafor — all rights reserved</span>
+          <span>© 2026 elisha gerson — all rights reserved</span>
         </footer>
       </div>
     </section>

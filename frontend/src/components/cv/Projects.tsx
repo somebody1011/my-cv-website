@@ -4,41 +4,43 @@ import { SectionHeader } from "./About";
 
 const projects = [
   {
-    name: "edge-cache",
+    name: "stockpilot",
     description:
-      "Distributed cache layer for the edge with sub-ms reads. Powers ~40M req/day for a SaaS dashboard.",
-    tech: ["Rust", "Cloudflare Workers", "WASM"],
-    stars: "2.1k",
-    forks: "186",
-    status: "production",
-  },
-  {
-    name: "pulse-ui",
-    description:
-      "Headless React component library with built-in motion primitives. Used across 5 internal products.",
-    tech: ["TypeScript", "React", "Framer Motion"],
-    stars: "843",
-    forks: "52",
+      "An inventory management and point-of-sale system for store owners.",
+    tech: ["Nextjs", "Firestore", "Vercel"],
+    stars: "2",
+    forks: "1",
     status: "active",
+    link:"#"
   },
   {
-    name: "ledger-cli",
+    name: "finconnect",
     description:
-      "Tiny terminal-first finance tracker that syncs to a local SQLite file. ~12kb compiled.",
-    tech: ["Go", "SQLite", "Cobra"],
-    stars: "612",
-    forks: "31",
-    status: "stable",
+      "a lightweight, provider-agnostic integration wrapper that simplifies payment processing across multiple East African fintech platforms.",
+    tech: ["TypeScript", "RESTapi", "Axios"],
+    stars: "1",
+    forks: "0",
+    status: "development",
+    link:"https://github.com/somebody1011/finconnect"
   },
-  {
-    name: "promptlab",
-    description:
-      "Prompt engineering playground with versioning, evals, and a clean diff UI for LLM responses.",
-    tech: ["Next.js", "tRPC", "Postgres"],
-    stars: "1.4k",
-    forks: "94",
-    status: "beta",
-  },
+  // {
+  //   name: "ledger-cli",
+  //   description:
+  //     "Tiny terminal-first finance tracker that syncs to a local SQLite file. ~12kb compiled.",
+  //   tech: ["Go", "SQLite", "Cobra"],
+  //   stars: "612",
+  //   forks: "31",
+  //   status: "stable",
+  // },
+  // {
+  //   name: "promptlab",
+  //   description:
+  //     "Prompt engineering playground with versioning, evals, and a clean diff UI for LLM responses.",
+  //   tech: ["Next.js", "tRPC", "Postgres"],
+  //   stars: "1.4k",
+  //   forks: "94",
+  //   status: "beta",
+  // },
 ];
 
 const statusColor: Record<string, string> = {
@@ -54,13 +56,13 @@ export function Projects() {
   return (
     <section id="work" ref={ref} className="relative px-4 py-28 md:px-8 md:py-36">
       <div className="mx-auto max-w-7xl">
-        <SectionHeader index="03" title="projects" file="~/ada/projects/" />
+        <SectionHeader index="03" title="projects" file="~/elisha/projects/" />
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           {projects.map((p, i) => (
             <a
               key={p.name}
-              href="#"
+              href={p.link}
               className="project-card reveal group flex flex-col rounded-lg p-6"
               style={{ transitionDelay: `${i * 70}ms` }}
             >
@@ -112,7 +114,7 @@ export function Projects() {
         </div>
 
         <div className="reveal mt-12 text-center">
-          <a href="#" className="story-link inline-flex items-center gap-2 font-mono text-sm text-primary">
+          <a href="https://github.com/somebody1011?tab=repositories" className="story-link inline-flex items-center gap-2 font-mono text-sm text-primary">
             <span className="cm">$</span> ls --all-projects →
           </a>
         </div>

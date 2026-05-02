@@ -14,13 +14,13 @@ import { InteractiveBackground } from "@/components/cv/InteractiveBackground";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ada Okafor — Software Engineer" },
+      { title: "Elisha Gerson — Software Developer" },
       {
         name: "description",
         content:
-          "Full-stack engineer building fast, reliable web products with TypeScript, React, Go, and Rust. Open-source contributor and indie builder.",
+          "Full-stack Developer building fast, reliable web products with TypeScript, React, Python and Go. Open-source contributor and indie builder.",
       },
-      { property: "og:title", content: "Ada Okafor — Software Engineer" },
+      { property: "og:title", content: "Elisha Gerson — Software Developer" },
       {
         property: "og:description",
         content: "Developer portfolio: tech stack, projects, and experience.",
