@@ -1,5 +1,5 @@
 import {  Mail,  FileText } from "lucide-react";
-import { FaGithub, FaLinkedin} from "react-icons/fa"; //FaTwitter 
+import { FaGithub, FaLinkedin,FaWhatsapp} from "react-icons/fa"; //FaTwitter 
 import { useReveal } from "@/hooks/use-reveal";
 import { SectionHeader } from "./About";
 
@@ -7,7 +7,9 @@ const socials = [
   { Icon: FaGithub, label: "github", value: "somebody1011", link: "https://github.com/somebody1011" },
   // { Icon: FaTwitter, label: "twitter", value: "@ada_codes" },
   { Icon: FaLinkedin, label: "linkedin", value: "/in/elisha-gerson", link: "https://www.linkedin.com/in/elisha-gerson-3855222a2" },
+  { Icon: FaWhatsapp, label: "whatsapp", value: "+255761844119", link: "#" },
   { Icon: FileText, label: "resume", value: "View Resume", link: "https://rxresu.me/elishagerson2/my-resume-elisha-gerson-2026" },
+  
 ];
 
 export function Contact() {
@@ -29,8 +31,8 @@ export function Contact() {
           <div className="reveal lg:col-span-7">
             <p className="mb-3 font-mono text-sm text-muted-foreground">
               <span className="cm">$</span> ./say-hello
-              or just want to{""}
-              <span className="text-accent">chat shop?</span>
+              or just want to {""}
+              <span className="text-accent">chat? Whatsapp me📱</span>
             </p>
             <p
               className="mt-6 max-w-xl text-base text-muted-foreground"
